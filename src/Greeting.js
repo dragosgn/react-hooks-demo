@@ -12,7 +12,7 @@ const Input = styled.input`
   }
 `;
 
-export default () => {
+const Hooks = () => {
   const [name, setName] = useState("Leia");
 
   function handleNameChange(e) {
@@ -31,3 +31,13 @@ export default () => {
     </div>
   );
 };
+
+export default class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Hooks />
+      </div>
+    );
+  }
+}
