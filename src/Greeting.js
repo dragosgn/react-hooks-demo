@@ -28,6 +28,9 @@ const Hooks = () => {
         type="text"
         placeholder="Luke Skywalker"
       />
+      <div>
+        <p>{`Your name is: ${name}`}</p>
+      </div>
     </div>
   );
 };
